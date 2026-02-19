@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Svatba Kristýny a Pavla | 23.5.2026</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --primary: #8da18d; --secondary: #d4a373; --bg: #fdfaf5; --text: #2f3e46; }
+        body { font-family: 'Lato', sans-serif; margin: 0; background: var(--bg); color: var(--text); line-height: 1.6; text-align: center; }
+        
+        header { padding: 120px 20px; background: white; border-bottom: 8px solid var(--primary); position: relative; }
+        h1 { font-family: 'Playfair Display', serif; font-size: 3.5rem; margin: 0; color: var(--primary); }
+        .date { font-size: 1.8rem; letter-spacing: 2px; margin: 10px 0; font-weight: 300; }
+        .souckovi { font-style: italic; opacity: 0.7; font-size: 1.2rem; }
+
+        section { padding: 80px 20px; max-width: 900px; margin: 0 auto; }
+        .card { background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); margin-bottom: 40px; border: 1px solid #eee; }
+        h2 { font-family: 'Playfair Display', serif; color: var(--secondary); font-size: 2.2rem; margin-bottom: 30px; }
+        
+        .timeline { text-align: left; max-width: 500px; margin: 0 auto; }
+        .time-item { display: flex; margin-bottom: 15px; border-left: 2px solid var(--primary); padding-left: 20px; position: relative; }
+        .time-item::before { content: ''; width: 12px; height: 12px; background: var(--primary); border-radius: 50%; position: absolute; left: -7px; top: 5px; }
+        .time-val { font-weight: bold; min-width: 60px; color: var(--primary); }
+
+        .btn { background: var(--primary); color: white; padding: 18px 35px; text-decoration: none; border-radius: 50px; display: inline-block; font-weight: bold; transition: 0.3s; margin-top: 20px; border: none; cursor: pointer; font-size: 1.1rem; }
+        .btn:hover { background: var(--secondary); transform: translateY(-3px); }
+
+        .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .info-box { padding: 20px; border: 1px dashed var(--primary); border-radius: 10px; }
+        
+        a { color: var(--primary); text-decoration: underline; }
+        footer { padding: 60px; background: white; font-style: italic; color: #999; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Kristýna & Pavel</h1>
+    <p class="date">23. května 2026</p>
+    <p class="souckovi">...brzy Součkovi</p>
+</header>
+
+<section id="misto">
+    <div class="card">
+        <h2>Kdy a kde?</h2>
+        <p><strong>11:30 | Obřad</strong><br>Zámek Humprecht u Sobotky</p>
+        <p>Poté se společně přesuneme na oslavu do:<br>
+        <strong><a href="https://www.penzionslunecno.cz/" target="_blank">Penzionu Slunečno v Dobšíně</a></strong></p>
+        <p><em>Dresscode: Festive / Semi-formal<br>(pánové oblek/košile s motýlkem či kravatou, dámy společenské šaty)</em></p>
+    </div>
+</section>
+
+<section id="harmonogram">
+    <div class="card">
+        <h2>Harmonogram dne</h2>
+        <div class="timeline">
+            <div class="time-item"><span class="time-val">11:30</span><span>Svatební obřad</span></div>
+            <div class="time-item"><span class="time-val">12:15</span><span>Společné focení a gratulace</span></div>
+            <div class="time-item"><span class="time-val">12:45</span><span>Přesun hostů na Slunečno, ubytování</span></div>
+            <div class="time-item"><span class="time-val">14:00</span><span>Svatební oběd</span></div>
+            <div class="time-item"><span class="time-val">15:30</span><span>Krájení dortu a volná zábava</span></div>
+            <div class="time-item"><span class="time-val">18:00</span><span>Večerní raut</span></div>
+            <div class="time-item"><span class="time-val">20:00</span><span>Kapela, první tanec a party</span></div>
+        </div>
+        <p style="margin-top:30px; font-size: 0.9rem;">Během odpoledne se můžete těšit na fotokoutek a drobné svatební hry.</p>
+    </div>
+</section>
+
+<section id="rsvp">
+    <div class="card">
+        <h2>Potvrzení účasti</h2>
+        <p>Prosíme o vyplnění dotazníku <strong>do konce března</strong>, abychom mohli vše doladit (počet osob, strava, ubytování).</p>
+        <a href="https://docs.google.com/forms/d/e/...your-id.../viewform" class="btn" target="_blank">Vyplnit formulář</a>
+    </div>
+</section>
+
+<section id="prakticke">
+    <div class="card">
+        <h2>Praktické informace</h2>
+        <div class="info-grid">
+            <div class="info-box">
+                <strong>Ubytování</strong><br>
+                Pro předem domluvené hosty je zajištěno ubytování přímo v penzionu a hradí ho novomanželé. Dejte nám prosím vědět ve formuláři.
+            </div>
+            <div class="info-box">
+                <strong>Nápoje</strong><br>
+                Nealko, pivo, víno, sekt a naše domácí medovina jsou pro vás připraveny zdarma. Tvrdý alkohol si každý host hradí sám.
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Svatební dary</h2>
+        <p>Jelikož spolu již nějakou dobu žijeme a domácnost máme vybavenou, největším darem pro nás bude vaše přítomnost.</p>
+        <p>Pokud byste nás přesto chtěli obdarovat, budeme moc vděční za příspěvek na <strong>zútulnění našeho domu</strong> nebo na naši <strong>svatební cestu</strong>.</p>
+        <p style="font-size: 1.3rem; color: var(--primary); font-weight: bold;">Č. ú.: 123456789 / 0000</p>
+    </div>
+</section>
+
+<footer>
+    <p>Moc se na vás těšíme!<br>Kristýna & Pavel</p>
+</footer>
+
+</body>
+</html>
